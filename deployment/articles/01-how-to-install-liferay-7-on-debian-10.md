@@ -136,7 +136,7 @@ root@deb-liferay:~# sudo add-apt-repository --yes https://adoptopenjdk.jfrog.io/
 root@deb-liferay:~# add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
 ```
 
-##$ Install JDK 8
+## Install JDK 8
 ```shell
 root@deb-liferay:~# apt update -y
 root@deb-liferay:~# apt install adoptopenjdk-8-hotspot -y
@@ -149,7 +149,7 @@ javac 1.8.0_282
 root@deb-liferay:~#
 ```
 
-##$ Set Java Home Environment
+## Set Java Home Environment
 ```shell
 root@deb-liferay:~# update-alternatives --config java
 There is only one alternative in link group java (providing /usr/bin/java): /usr/lib/jvm/adoptopenjdk-8-hotspot-amd64/bin/java
