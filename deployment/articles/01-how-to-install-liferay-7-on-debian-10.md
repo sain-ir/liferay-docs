@@ -1,4 +1,4 @@
-# How to install Liferay 7.x on Debiann 10
+# How to install Liferay 7.x on Debian 10
 
 [TOC levels=1-4]
 
