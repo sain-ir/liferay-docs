@@ -144,6 +144,18 @@ root@deb-liferay:~# java -version
 openjdk version "1.8.0_282"
 OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_282-b08)
 OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.282-b08, mixed mode)
+root@kosar:~# update-alternatives --config javac
+There are 2 choices for the alternative javac (providing /usr/bin/javac).
+
+  Selection    Path                                                 Priority   Status
+------------------------------------------------------------
+* 0            /usr/lib/jvm/java-11-openjdk-amd64/bin/javac          1111      auto mode
+  1            /usr/lib/jvm/adoptopenjdk-8-hotspot-amd64/bin/javac   1081      manual mode
+  2            /usr/lib/jvm/java-11-openjdk-amd64/bin/javac          1111      manual mode
+
+Press <enter> to keep the current choice[*], or type selection number: 1
+update-alternatives: using /usr/lib/jvm/adoptopenjdk-8-hotspot-amd64/bin/javac to provide /usr/bin/javac (javac) in manual mode
+
 root@deb-liferay:~# javac -version
 javac 1.8.0_282
 root@deb-liferay:~#
