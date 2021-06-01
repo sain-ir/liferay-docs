@@ -183,6 +183,17 @@ root@deb-liferay:~# ln -s /opt/liferay/tomcat-9.0.37 /opt/liferay/tomcat
 
 ```shell
 root@deb-liferay:~# /opt/liferay/tomcat/bin/startup.sh
+Using CATALINA_BASE:   /opt/liferay/tomcat
+Using CATALINA_HOME:   /opt/liferay/tomcat
+Using CATALINA_TMPDIR: /opt/liferay/tomcat/temp
+Using JRE_HOME:        /usr/lib/jvm/adoptopenjdk-8-hotspot-amd64
+Using CLASSPATH:       /opt/liferay/tomcat/bin/bootstrap.jar:/opt/liferay/tomcat/bin/tomcat-juli.jar
+Tomcat started.
+
+| **Note** JRE_HOME must assigned to jdk8. if it is jdk11 please edit (/etc/profile) file and add this line to end of file :
+| export JAVA_HOME="/usr/lib/jvm/adoptopenjdk-8-hotspot-amd64"
+| export PATH=$JAVA_HOME/bin:$PATH
+
 root@deb-liferay:~# tail -f /opt/liferay/tomcat/logs/catalina.out
 ```
 > Now, Go to http://SERVER-IP:8080 and finish setup of Liferay Portal.
