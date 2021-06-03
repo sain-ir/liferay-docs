@@ -77,7 +77,7 @@ root@deb-liferay:~# chmod 0700 /home/data/postgres
 #------------------------------------------------------------------------------
 
 # Add settings for extensions here
-data_directory = '/home/data/postgres'
+data_directory = '/home/data/postgres/main'
 ```
 
 > Then restart the `postgresql` service
@@ -116,6 +116,9 @@ Type "help" for help.
 
 lportal735=> \q
 ```
+More resource:
+https://support.plesk.com/hc/en-us/articles/115003321434-How-to-enable-remote-access-to-PostgreSQL-server-on-a-Plesk-server-
+
 
 ## Install AdoptedOpenJDK 8
 
