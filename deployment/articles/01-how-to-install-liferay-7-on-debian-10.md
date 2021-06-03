@@ -135,7 +135,11 @@ root@deb-liferay:~# sudo add-apt-repository --yes https://adoptopenjdk.jfrog.io/
 -bash: sudo: command not found
 root@deb-liferay:~# add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
 ```
-
+Also you can this alternative repo
+```shell
+deb https://mirrors.sustech.edu.cn/AdoptOpenJDK/deb focal main
+```
+More information: https://mirrors.sustech.edu.cn/help/AdoptOpenJDK.html#debian-ubuntu-%E7%94%A8%E6%88%B7
 ## Install JDK 8
 ```shell
 root@deb-liferay:~# apt update -y
