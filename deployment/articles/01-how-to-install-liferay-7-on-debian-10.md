@@ -69,7 +69,7 @@ root@deb-liferay:~# mv /var/lib/postgresql/11/main /var/lib/postgresql/11/main.b
 root@deb-liferay:~# chown -Rf postgres:postgres /home/data/postgres
 root@deb-liferay:~# chmod 0700 /home/data/postgres
 ```
-- Edit configuration file and change default `data_directory` by adding bellow line at end of file after `# Add settings for extensions here` line like
+- Edit postgres configuration file (/etc/postgresql/11/main/postgresql.conf) and change default `data_directory` by adding bellow line at end of file after `# Add settings for extensions here` line like
 
 ```shell
 #------------------------------------------------------------------------------
@@ -140,6 +140,18 @@ root@deb-liferay:~# add-apt-repository --yes https://adoptopenjdk.jfrog.io/adopt
 ```shell
 root@deb-liferay:~# apt update -y
 root@deb-liferay:~# apt install adoptopenjdk-8-hotspot -y
+root@deb-liferay:~# update-alternatives --config java
+There are 3 choices for the alternative java (providing /usr/bin/java).
+
+  Selection    Path                                                Priority   Status
+------------------------------------------------------------
+  0            /usr/lib/jvm/java-11-openjdk-amd64/bin/java          1111      auto mode
+* 1            /usr/lib/jvm/adoptopenjdk-8-hotspot-amd64/bin/java   1081      manual mode
+  2            /usr/lib/jvm/java-11-openjdk-amd64/bin/java          1111      manual mode
+  3            /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java       1071      manual mode
+
+Press <enter> to keep the current choice[*], or type selection number: 1
+
 root@deb-liferay:~# java -version
 openjdk version "1.8.0_282"
 OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_282-b08)
