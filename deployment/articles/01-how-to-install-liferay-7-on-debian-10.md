@@ -135,7 +135,7 @@ root@deb-liferay:~# sudo add-apt-repository --yes https://adoptopenjdk.jfrog.io/
 -bash: sudo: command not found
 root@deb-liferay:~# add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
 ```
-Also you can this alternative repo
+Also you can use this alternative repo
 ```shell
 deb https://mirrors.sustech.edu.cn/AdoptOpenJDK/deb focal main
 ```
